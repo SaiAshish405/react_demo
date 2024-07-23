@@ -1,16 +1,15 @@
-// src/App.js
 import React from 'react';
-import Gallery from './components/cards/gallery';
-import "../src/components/cards/app.css"
 
+import './App.css';
+import Gallery from './InfinitScrolling/Gallery';
 
-
-const App = () => {
+function App() {
   return (
     <div className="App">
+      <h1>Infinite Scroll Gallery with Lazy Loading</h1>
       <Gallery/>
     </div>
   );
-};
+}
 
 export default App;
