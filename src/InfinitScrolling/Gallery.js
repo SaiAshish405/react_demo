@@ -12,7 +12,7 @@ const Gallery = () => {
   const fetchImages = useCallback(async () => {
     try {
       const response = await axios.get(
-        `https://api.slingacademy.com/v1/sample-data/photos?offset=${(page - 1) * 2}&limit=100`
+        `https://api.slingacademy.com/v1/sample-data/photos?offset=${(page - 1) * 2}&limit=10`
       );
       setImages((prevImages) => [...prevImages, ...response.data.photos]);
       if (response.data.photos.length === 0) {
